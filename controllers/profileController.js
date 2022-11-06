@@ -9,7 +9,6 @@ profileController.get('/', async(req,res) =>{
     const blogs= await getCreateblogs(userId);
     const followed = await getFollowBlogs(userId);
     
-
     
     res.render('profile', {
         title: "Profile Page",
